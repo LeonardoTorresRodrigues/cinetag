@@ -1,7 +1,7 @@
-function Inicio() {
+import Cabecalho from "../../components/Cabecalho";
+
+export default function Inicio() {
     return (
-        <h1>Olá mundo! Estou num página nova</h1>
+        <Cabecalho />
     )
 }
-
-export default Inicio;
