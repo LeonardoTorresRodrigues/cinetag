@@ -1,3 +1,4 @@
+import Container from "./components/Container";
 import Cabecalho from "./components/Cabecalho";
 import Rodape from "./components/Rodape";
 import Favoritos from "./pages/Favoritos";
@@ -8,10 +9,12 @@ function AppRoutes() {
     return (
         <BrowserRouter>
             <Cabecalho />
-            <Routes>
-                <Route path="/" element={<Inicio />} />
-                <Route path="/favoritos" element={<Favoritos />} />
-            </Routes>
+            <Container>
+                <Routes>
+                    <Route path="/" element={<Inicio />} />
+                    <Route path="/favoritos" element={<Favoritos />} />
+                </Routes>
+            </Container>
             <Rodape />
         </BrowserRouter>
     )
